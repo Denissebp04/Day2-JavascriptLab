@@ -26,3 +26,19 @@ console.log(isTwoOdd);
 // No number larger than 25
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 console.log(isOver25);
+
+// Check all unique numbers
+const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4;
+console.log(isUnique);
+
+// Results into a single variable 
+const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
+console.log(isValid)
+
+// Should not be done this way since it over complicates it
+// Better to break it into smaller, more manageable pieces
+const dontDoThis = ((n1 + n2 + n3 + n4) == 50) && 
+  ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
+  !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
+  (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+console.log(dontDoThis)
