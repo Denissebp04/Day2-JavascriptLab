@@ -42,3 +42,19 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 console.log(dontDoThis)
+
+// Check all numbers divisible by 5
+const divisibleBy5 = n1 % 5 == 0 && n2 % 5 == 0 && n3 % 5 ==0 && n4 % 5 == 0;
+console.log(divisibleBy5)
+
+// First Larger than Last
+const largerThan = n1 > n4;
+console.log(largerThan)
+
+// Arithmetic Chain
+const ArithmeticChain = ((n1 - n2) * n3) % n4;
+console.log(ArithmeticChain)
+
+// Change isOver25
+const isOver26 = n1 + n2 + n3 + n4 > 26;
+console.log(isOver26)
